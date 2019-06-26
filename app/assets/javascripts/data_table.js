@@ -9,9 +9,6 @@ function ItemResize(dataGrid, height, width) {
     window.setGridHolderHeight = parseInt(height)-dgMargin;
     dataGrid.height( parseInt(height)-dgMargin );
   }
-  var dataGridInstance = dataGrid.dxDataGrid('instance');
-  dataGridInstance.updateDimensions();
-  dataGridInstance.repaint();
 }
 function genericCustomSummary(opt, name, value) {
   if (opt.name === name && opt.summaryProcess === "start") {
